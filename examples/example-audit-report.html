@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Audit - user/example-rag-skill</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Inter',sans-serif; background:#0f0f23; color:#ccc; }
+.container { max-width:860px; margin:0 auto; padding:24px; }
+.glass { background:rgba(22,22,50,0.85); backdrop-filter:blur(12px); border:1px solid #2a2a4a; border-radius:20px; padding:28px; margin:20px 0; }
+.badge { display:inline-flex; align-items:center; gap:8px; background:#1a1a3e; padding:6px 16px; border-radius:20px; font-size:13px; color:#888; border:1px solid #2a2a4a; }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div style="text-align:center;padding:30px 0 10px;">
+        <div style="font-size:13px;color:#666;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Claude Skill Auditor</div>
+        <h1 style="font-size:26px;color:#fff;font-weight:700;">user/example-rag-skill</h1>
+        <div style="color:#888;font-size:14px;margin-top:6px;">Retrieval-Augmented Generation skill for Claude Code with ChromaDB integration</div>
+        <div style="margin:20px 0;">
+            <span class="badge">🔍 v1.0.0</span>
+            <span class="badge">📅 2026-06-02</span>
+            <span class="badge">📂 8 files</span>
+        </div>
+        <div style="display:inline-block;width:90px;height:90px;line-height:90px;border-radius:50%;text-align:center;font-size:40px;font-weight:800;
+            background:#00e67615;color:#00e676;border:3px solid #00e676;
+            margin:10px 0;">A</div>
+        <div style="font-size:48px;font-weight:300;color:#fff;margin:5px 0;">8.4<span style="font-size:24px;color:#666;">/10</span></div>
+    </div>
+
+    <!-- Metadata -->
+    <div class="glass">
+        <div style="font-size:16px;font-weight:600;color:#fff;margin-bottom:16px;">📋 Repository Overview</div>
+        
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div><span style="color:#666;">Repository</span><br/><span style="color:#eee;">user/example-rag-skill</span></div>
+        <div><span style="color:#666;">Stars</span><br/><span style="color:#FFD700;">⭐ 342</span></div>
+        <div><span style="color:#666;">Language</span><br/><span style="color:#eee;">Python</span></div>
+        <div><span style="color:#666;">License</span><br/><span style="color:#eee;">MIT</span></div>
+        <div style="grid-column:span 2;"><span style="color:#666;">Topics</span><br/><span style="color:#64B5F6;">rag, chromadb, claude-code, retrieval, embeddings, vector-search</span></div>
+        <div style="grid-column:span 2;"><span style="color:#666;">Description</span><br/><span style="color:#999;font-size:13px;">Retrieval-Augmented Generation skill for Claude Code with ChromaDB integration</span></div>
+    </div>
+    </div>
+
+    <!-- File Structure -->
+    <div class="glass">
+        <div style="font-size:16px;font-weight:600;color:#fff;margin-bottom:16px;">📁 File Structure</div>
+        <div><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">⚙️ .gitignore</span><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">📝 README.md</span><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">📝 SKILL.md</span><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">🐍 rag_skill.py</span><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">🐍 embeddings.py</span><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">📄 config.yaml</span><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">📄 examples/</span><span style="background:#1a1a3e;color:#aaa;padding:4px 14px;border-radius:20px;margin:4px;display:inline-block;font-size:13px;border:1px solid #2a2a4a;">📄 tests/</span></div>
+    </div>
+
+    <!-- Score Matrix -->
+    <div class="glass">
+        <div style="font-size:16px;font-weight:600;color:#fff;margin-bottom:16px;">📊 8-Dimension Score Matrix</div>
+        <table style="width:100%;border-collapse:collapse;">
+            <tr><th style="text-align:left;padding:10px 16px;color:#666;font-weight:500;border-bottom:2px solid #2a2a4a;">Dimension</th>
+                <th style="text-align:left;padding:10px 16px;color:#666;font-weight:500;border-bottom:2px solid #2a2a4a;">Focus</th>
+                <th style="padding:10px 16px;color:#666;font-weight:500;border-bottom:2px solid #2a2a4a;">Score</th>
+                <th style="text-align:center;padding:10px 16px;color:#666;font-weight:500;border-bottom:2px solid #2a2a4a;">Value</th></tr>
+            
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">Code Integrity</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">Syntax correctness, error handling, security posture, code s</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#00e676;width:95%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#00e676;border-bottom:1px solid #2a2a4a;">9.5</td>
+        </tr>
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">Documentation</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">README/SKILL.md completeness, install guide, examples, FAQ</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#00e676;width:85%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#00e676;border-bottom:1px solid #2a2a4a;">8.5</td>
+        </tr>
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">Architecture</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">File structure, dependency management, engineering config</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#00e676;width:80%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#00e676;border-bottom:1px solid #2a2a4a;">8.0</td>
+        </tr>
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">User Experience</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">Install ease, parameter intuitiveness, output clarity</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#00e676;width:85%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#00e676;border-bottom:1px solid #2a2a4a;">8.5</td>
+        </tr>
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">Resilience</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">Retry logic, rate limiting, timeout handling, edge cases</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#00e676;width:90%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#00e676;border-bottom:1px solid #2a2a4a;">9.0</td>
+        </tr>
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">Cross-Platform</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">Windows/macOS/Linux compatibility, encoding, path handling</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#ffc107;width:75%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#ffc107;border-bottom:1px solid #2a2a4a;">7.5</td>
+        </tr>
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">Maintainability</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">Comments, centralized config, versioning, changelog</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#00e676;width:80%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#00e676;border-bottom:1px solid #2a2a4a;">8.0</td>
+        </tr>
+        <tr>
+            <td style="padding:12px 16px;color:#e0e0e0;font-weight:600;border-bottom:1px solid #2a2a4a;">Innovation & Value</td>
+            <td style="padding:12px 16px;color:#888;font-size:13px;border-bottom:1px solid #2a2a4a;">Unique value proposition, differentiation, comparison eviden</td>
+            <td style="padding:12px 16px;border-bottom:1px solid #2a2a4a;">
+                <div style="background:#2a2a4a;border-radius:10px;height:22px;overflow:hidden;">
+                    <div style="background:#00e676;width:85%;height:100%;border-radius:10px;"></div>
+                </div>
+            </td>
+            <td style="padding:12px 16px;font-weight:700;text-align:center;color:#00e676;border-bottom:1px solid #2a2a4a;">8.5</td>
+        </tr>
+            <tr>
+                <td colspan="4" style="padding:16px;text-align:center;">
+                    <span style="font-size:18px;font-weight:600;color:#fff;">Weighted Total: </span>
+                    <span style="font-size:22px;font-weight:700;color:#00e676;">8.4/10</span>
+                    <span style="margin-left:16px;font-size:18px;font-weight:600;color:#fff;">Grade: </span>
+                    <span style="font-size:22px;font-weight:700;color:#00e676;">A</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="glass">
+        <div style="font-size:16px;font-weight:600;color:#fff;margin-bottom:16px;">🎯 Recommendations</div>
+        <ol style="padding-left:20px;"><li style="margin:10px 0;color:#ccc;font-size:14px;line-height:1.5;">🔍 <strong style="color:#fff;">1.</strong> [Documentation] Score 8.5/10 — add video demo or GIF walkthrough</li><li style="margin:10px 0;color:#ccc;font-size:14px;line-height:1.5;">🔍 <strong style="color:#fff;">2.</strong> [Cross-Platform] Score 7.5/10 — verify Windows compatibility with pathlib</li><li style="margin:10px 0;color:#ccc;font-size:14px;line-height:1.5;">🔍 <strong style="color:#fff;">3.</strong> [Architecture] Score 8.0/10 — consider adding pytest test suite</li><li style="margin:10px 0;color:#ccc;font-size:14px;line-height:1.5;">🔍 <strong style="color:#fff;">4.</strong> [Recommendation] Add GitHub Actions CI badge for test coverage</li><li style="margin:10px 0;color:#ccc;font-size:14px;line-height:1.5;">🔍 <strong style="color:#fff;">5.</strong> [Recommendation] Run auditor again after applying fixes to track progress</li></ol>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align:center;padding:30px;color:#444;font-size:12px;">
+        Generated by <strong style="color:#666;">Claude Skill Auditor</strong> v1.0.0 · 2026-06-02 16:30 UTC
+    </div>
+</div>
+</body>
+</html>
