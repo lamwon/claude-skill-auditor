@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.pyo
+example-*.html
+generate-example.py
